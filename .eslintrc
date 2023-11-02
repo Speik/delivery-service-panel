@@ -1,0 +1,46 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "ecmaVersion": 2022
+  },
+  "extends": [
+    "plugin:vue/vue3-recommended",
+    "eslint:recommended",
+    "@vue/typescript/recommended"
+  ],
+  "rules": {
+    "no-console": "off",
+    "vue/no-deprecated-slot-attribute": "off",
+    "vue/multi-word-component-names": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-undef": "off",
+    "no-trailing-spaces": "error",
+    "no-multi-spaces": ["error"],
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "quotes": [2, "single"],
+    "object-curly-spacing": ["error", "always"],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
+    "block-spacing": ["error", "never"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "space-before-blocks": ["error", { "functions": "always", "keywords": "always", "classes": "always" }],
+    "require-await": "error",
+    "space-infix-ops": "error",
+    "no-nested-ternary": "error",
+    "camelcase": "error",
+    "eqeqeq": ["error", "always"],
+    "no-empty": ["error", { "allowEmptyCatch": false }],
+    "comma-dangle": ["error", "only-multiline"],
+    "prefer-const": "warn",
+    "no-unused-vars": "off",
+    "no-unused-expressions": "warn"
+  }
+}
